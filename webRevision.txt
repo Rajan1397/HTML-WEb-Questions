@@ -1,0 +1,148 @@
+
+What is !important
+Important in an css property that is having highest priority and it overrides all the existing css property.  But in real life practical application we mostly avoid use important because it may leads to unnecessary bug or hard to debug the css on the page. 
+ 
+What is the box model?
+In CSS, the term "box model" is used when talking about design and layout. The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.
+ 
+What is the difference between position absolute, relative and fixed?
+ 
+Relative - the element is positioned relative to its normal position.
+Absolute - the element is positioned absolutely to its first positioned parent.
+Fixed - the element is positioned related to the browser window.
+ 
+ 
+What is CSS positioning?
+ 
+    To break the normal flow of the html element or to position any particular element as per our needs we use position property in css.  There are 4 types of position. Static, relative, fixed, absolute, sticky. By default all elements have the static position. To define a position of any particular element on the page we might need to use top, bottom, left, right, z-index properties.
+ 
+The difference between display none and display hidden?
+ 
+By using display none that element gets vanish or like disappear and though we can interact with that element by using dom but unlike display none, incase of hidden it’s doesn’t disappear it will still take it’s own space in the page. It just hidden from us or from the page.
+ 
+Difference between flex and grid? Where to use it?
+Flex and grids are display property. Flex is a 1D structure and grid is 2D structure. By using flex we can manage flow of element either in-line or inline block (horizontally or vertically) however we can’t control the flow of element in the both direction.
+ To enable the grid property we must have to provide the number of rows and cols. Unlike flex in grid we can manage the elements horizontally and vertically at the same time dynamically.
+To make our page responsive grid is very useful.
+ 
+ 
+What is BEM?
+	BEM is a frontend naming method for organising and naming CSS classes. The Block, Element, Modifier mythology is popular naming convention for class names in HTML and CSS. It helps us to write clean CSS by following some simple rules. 
+What is the z-index? What is the stacking context?
+ The z-index property specifies the stack order of an element.
+An element with greater stack order always if front of an element with lower stack order. Z-index only works on positioned elements.(like relative position, absolute, fixed and sticky). If two positioned elements overlaps without z-index specified, the element positioned in the last of the HTML code will be shown on the top.
+
+
+
+Explain briefly what happens when you hit a url? explain DNS lookup
+ 
+When we hit the url first thing happens is resolve the IP address associated with the domain name. DNS helps us to resolving this. 
+Then browser will establish the connection with the server. 
+Browser will send the request to the server.
+Server will serve the information.
+Browser will render the webpage.
+ 
+ 
+What is a URLs full form? Explain what a url is and the four parts it consists of The protocol in use The hostname of the server The location of the file The arguments to the file
+URL :  Uniform Resourses Locator. 
+It has the location of the resources which we want to access. It is an address of that place where we want to go to interact with or find the information.
+ 
+Https => tells browser which protocol should use. It can be http, https, ftp etc. Protocol is basically set of rules that browser use to communication over the network.
+ 
+www.example.com => It is basically a domain name.We use it to reach to the server that is responsible for serving the information for that website. 
+ 
+Path or the location of that website/ resources
+Arguments or parameters for the extra information 
+ 
+What is HTTP protocol?
+The HTTP protocol defines the syntax (the data format and encoding), symantics (the meaning associated with syntax) , and the timing (speed of the sequencing) . Each HTTP request and response exchange between client and server is considered as a single HTTP transaction.
+ 
+What is TCP Protocol?
+TCP Transmission Controle Protocol / Internet Protocol. The most widely used Protocol.A protocol is a standard set of rule for doing something. TCP/IP is used as a standard for transmitting data over networks.
+ 
+Explain all the different HTTP methods?
+HTTP methods tells the server what to do with the data identifier by the url.  HTTP methods are GET, PUT, POST, PATCH, DELETE.  
+ 
+What are HTTP headers?
+ 
+HTTP headers we use to pass some additional information with the request. HTTP  headers contains metadata (data about data). Metadata contains request type ( GET, POST, DELETE, PUT), path, status code, content-type, post body, cockies. More…
+ 
+What are some HTTP response codes? what does it mean? 2xx, 3xx, 4xx, 5xx
+ HTTP response codes indicates that wether the specific HTTP request successfully completed or not. 
+Informational : starts with 1xx 
+Successful : starts with 2xx
+Redirectional : starts with 3xx
+Client Errors : start with 4xx
+Server error : starts with 5xx
+ 
+What does cache control on http response mean?
+ It holds instructions that control catching in browser and shared catches
+ 
+ 
+ 
+What is polling?
+ Basically polling is AZAX ( Asynchronous Javascript And XML ) using XMLHTTPRequest
+ 
+What is long polling?
+ 
+AZAX but If resources has the data it’ll response right away however if resources does not have any data then it will keep the connection open until in the backend the data comes up then it send the data to the client
+ 
+What are web sockets?
+ 
+An object with creates and manages a connection to a server as well as sending and receiving the data. 
+Where connection established  between client and resource. And when data get changes to the backend resources push the push data to the client .
+ 
+How is web sockets different from HTTP?
+HTTP :  stateless - independent 
+Web sockets - statefull - dependents ( wait for response )
+ 
+ 
+ 
+ 
+What is HTTPS?
+HTTPS stands for Hyper Text Transfer Protocol Secure.
+HTTPS url start with https:// and uses a port number 443 by default. 
+It’s not separate from HTTP but it’s more secure than HTTP and confidential version of it. It’s the safest way to transfer data between browser and server.
+ 
+ 
+What is Cross Origin Resource Sharing? ( CORS ) Why do we need it?
+ 
+Cross Origin Resouce Sharing (CROS)  is header base mechanism that allows the server to indicate any origin, other than it’s own. To happen this we need CROS
+ 
+What does Access-Control-Allow-Origin header do?
+ 
+It gives allow to the server to indicate or access other domain than it’s own domain. 
+ 
+What is clickjacking? How do you fix it?
+Clickjacking (interface based attacks ) hackers imbed a malicious link to legitimate page hence privacy is compromised.
+It can be prevent by using Content-Security-Policy(CSP) which add a layer of security.
+ 
+ 
+ 
+What are some performance metrics for your website?
+Time to first byte : it represent how much time it take to take the very first byte of information
+Page load : how much time it takes to load the web page and contain of that page etc…
+DNS lookup speed : how much time it takes to convert domain name into IP address
+ 
+What do CDN or Content Delivery Networks do? When do you need a CDN?
+CDN content delivery networks defines a geographically distributed group of server which works together to provide fast delivery of internet content.
+Servers stores the copy of the data so that server can fulfil the request by sending through closest server to the respective user.
+Uses:  reduce load time, avoid/handles high traffic, secure application .
+ 
+What is the difference between Client Side Renderring and Server Side Renderring?
+ 
+ 
+Server Side : in sever side the routing Dynamically without refreshing everytime user request a different routes. 
+Client side : Dynamically displaying the data as required. In client side re-rendering is able to display a fully populated page on the first load of any routed of the websites. 
+ 
+What is Progressive Renderring
+ 
+Progessive rendering means render/ loading the important code or information first. 
+ 
+ 
+What is the difference between Preloading and Prefetching resources?
+Preloading : tells browser to load cache or resource as soon as possible 
+Prefetching : asks the browser to download the resources (like stylesheet script ) in the background. The download happens with the low priority so it doesn’t interfere with the more higher priority resoursece.
+ 
+What are service workers?
+Background service that handle network requests.  Ideal for dealing with offline situation, and serving the data when users get online.
